@@ -1,0 +1,102 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.active{
+  color: goldenrod !important;
+}
+img:not(.offcanves-icon){
+  width: 100%;
+  border-radius: 8px;
+}
+nav{
+  margin-top: 25px;
+  margin-bottom:25px ;
+}
+.navbar-nav li{
+ width: 100%;
+}
+ .navbar-nav .nav-link{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.content-wrraper{
+  display: grid;
+  gap: 20px;
+}
+main{
+  grid-column: 1/9;
+}
+.text-wrraper{
+  margin-top: 28px;
+}
+main .main-title h1{
+  grid-column: 1/8;
+  font-family: "Inter", sans-serif;
+  font-weight: 900 !important;
+  padding-right:72px;
+}
+.main-text .btn{
+  background: hsl(35, 77%, 62%);
+  border: 2px solid;
+}
+.main-text .btn:hover{
+  color: hsl(35, 77%, 62%);
+  background: #000;
+  transition: 1s;
+}
+aside{
+  grid-column: 9/12;
+  background: #000; 
+  border-radius: 6px;
+  padding: 15px;
+}
+aside .aside-title h2{
+  font-family: "Inter", sans-serif;
+ font-weight:700 !important;
+ color: goldenrod;
+ text-transform: uppercase;
+
+}
+ .aside-content h5{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: white;
+ }
+ .aside-content p{
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: rgb(202, 191, 172);
+  text-align: justify;
+ }
+footer{
+  grid-column: 1/12;
+  margin-top: 15px;
+}
+.offcanvas img{
+  display: none;
+}
+
+footer h5{
+  font-family: "Inter", sans-serif;
+  font-weight: 700 !important;
+}
+.count h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 700 !important;
+}
+
+@media screen and (max-width: 440px) {
+  main{
+    grid-column: 1/12;
+  }
+  aside{
+    grid-column: 1/12;
+  }
+}
+
